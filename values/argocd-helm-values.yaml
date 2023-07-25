@@ -261,7 +261,7 @@ notifications:
           {{if eq .serviceType "telegram"}}:white_check_mark:{{end}} Application {{.app.metadata.name}} is now running new version of deployments manifests.
     template.app-health-degraded: |
         message: |
-          {{if eq .serviceType "slack"}}:exclamation:{{end}} Application {{.app.metadata.name}} has degraded.
+          {{if eq .serviceType "telegram"}}:exclamation:{{end}} Application {{.app.metadata.name}} has degraded.
           Application details: {{.context.argocdUrl}}/applications/{{.app.metadata.name}}.
     template.app-sync-failed: |
         message: |
