@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "6512248302"
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/gihangt/terraform.git
+    targetRevision: HEAD
+    path: dev
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: myapp
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      prune: true
+      selfHeal: true
