@@ -4,7 +4,7 @@ metadata:
   name: myapp
   namespace: argocd
   annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "6512248302"
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "gihannew"
 spec:
   project: default
 
