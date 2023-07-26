@@ -93,7 +93,7 @@ notifications:
     ## Can be used for templates, notification services etc. Some examples given below.
     ## For more information: https://argocd-notifications.readthedocs.io/en/stable/services/overview/
     items: 
-      telegram-token: "6512248302:AAGdTEEke-Wk5rtQ0XQmNW5NhKNwOP86Wns"
+      telegram-token: "xxxxxxxxxxxxxxx"
       #   # For more information: https://argocd-notifications.readthedocs.io/en/stable/services/slack/
 
       # grafana-apiKey:
@@ -240,7 +240,7 @@ notifications:
   subscriptions: 
     # # subscription for on-sync-status-unknown trigger notifications
     - recipients:
-      - telegram:gihannew
+      - telegram:xxxxx
       triggers:
       - on-sync-status-unknown
       - on-sync-failed
