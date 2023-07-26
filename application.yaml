@@ -4,11 +4,11 @@ metadata:
   name: myapp
   namespace: argocd
   annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "gihannew"
-    notifications.argoproj.io/subscribe.on-sync-failed.telegram: "gihannew"
-    notifications.argoproj.io/subscribe.on-sync-running.telegram: "gihannew"
-    notifications.argoproj.io/subscribe.on-deployment-failed.telegram: "gihannew"
-    notifications.argoproj.io/subscribe.on-deployment-succeeded.telegram: "gihannew"
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "xxxx"
+    notifications.argoproj.io/subscribe.on-sync-failed.telegram: "xxx"
+    notifications.argoproj.io/subscribe.on-sync-running.telegram: "xxx"
+    notifications.argoproj.io/subscribe.on-deployment-failed.telegram: "xxx"
+    notifications.argoproj.io/subscribe.on-deployment-succeeded.telegram: "xxx"
 spec:
   project: default
 

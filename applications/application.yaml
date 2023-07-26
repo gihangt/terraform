@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cloud-site
+  namespace: argocd
+spec:
+  destination:
+    namespace: cloud-site
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: applications/chart
+    repoURL: 'https://github.com/gihangt/terraform.git'
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+          - CreateNamespace=true

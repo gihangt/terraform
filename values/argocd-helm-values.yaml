@@ -1,3 +1,11 @@
+configs:
+  rbac:
+    policy.default: ""
+    policy.csv: ""
+  cm:
+    admin.enabled: "true"
+    exec.enabled: "true"
+
 ## Notifications controller
 notifications:
   # -- Enable notifications controller
@@ -234,6 +242,7 @@ notifications:
   cm:
     # -- Whether helm chart creates notifications controller config map
     create: true
+
 
   # -- Contains centrally managed global application subscriptions
   ## For more information: https://argocd-notifications.readthedocs.io/en/stable/subscriptions/
